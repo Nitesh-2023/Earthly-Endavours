@@ -1,0 +1,96 @@
+body{
+    background-image: url(Stock_zaid/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px; 
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px; 
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.block{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+/* main */
+
+.option{
+    height: 200px;
+    width: 95%;
+    display: flex;
+    flex: wrap;
+}
+
+.img{
+    border: 2px solid black;
+    margin: 10px 5px;
+    border-radius: 10px;
+    
+}
+
+.imgg{
+    height: 100%;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.text{
+    border: 2px solid black;
+    margin: 10px;
+    text-align: justify;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #bde3bc;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  
+
